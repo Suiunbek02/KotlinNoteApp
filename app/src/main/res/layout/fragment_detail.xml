@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
     android:layout_height="match_parent"
-    tools:context=".detail.DetailFragment">
+    tools:context=".ui.fragments.noteapp.detail.DetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
 
-</FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/imeg2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_confirm_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end"
+            android:text="@string/Готова"
+            android:textColor="@color/DarkOrange"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="30 Апреля" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:gravity="start"
+            tools:text="10:00" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+         android:id="@+id/detail_et"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="80dp"
+         android:hint="@string/Ваша"
+         android:textCursorDrawable="@color/DarkOrange"
+         android:textColor="@color/white"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:textColorHint="@color/gray"
+         android:textSize="15sp"
+         android:paddingStart="20dp"
+         android:paddingEnd="20dp"
+         android:inputType="textPersonName" />
+
+    <EditText
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/directions"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/detail_et"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textMultiLine"
+        android:textCursorDrawable="@color/DarkOrange"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/gray"
+        android:hint="ваше_описание"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_detail.xml" value="0.20153985507246377" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_note_app.xml" value="0.20153985507246377" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/item_note.xml" value="0.10486322188449848" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1345" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/color.xml" value="0.12" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1345" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/liuse.xml" value="0.1255" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_code.xml" value="0.24947916666666667" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_detail.xml" value="0.176" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_main_on_board.xml" value="0.2" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_note_app.xml" value="0.2" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_on_board.xml" value="0.16" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/item_note.xml" value="0.1" />
       </map>
     </option>
   </component>
