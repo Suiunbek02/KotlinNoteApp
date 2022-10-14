@@ -10,6 +10,7 @@
     <color name="DarkOrange">#FF8C00</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="red">#FF0000</color>
+    <color name="DarkRed">#8B0000</color>
     <color name="DimGray">#343434</color>
     <color name="gray">#808080</color>
     <color name="glass_color"> #f6feff</color>

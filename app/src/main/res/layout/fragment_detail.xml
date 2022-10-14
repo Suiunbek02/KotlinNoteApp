@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.noteapp.detail.DetailFragment">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
@@ -94,5 +93,36 @@
         android:paddingStart="20dp"
         android:textColorHint="@color/gray"
         android:hint="ваше_описание"/>
+
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/blackColor"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/radiobtnblack"
+        android:layout_marginBottom="40dp"/>
+
+    <RadioButton
+        android:id="@+id/whiteColor"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/radiobottun"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginBottom="40dp"/>
+
+    <RadioButton
+        android:id="@+id/darkRedColor"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/radiobtn"
+        android:layout_marginBottom="40dp"/>
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

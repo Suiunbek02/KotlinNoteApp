@@ -3,6 +3,7 @@ package com.example.projectkotlin1.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.navigation.fragment.NavHostFragment
 import com.example.projectkotlin1.App
 import com.example.projectkotlin1.R
@@ -27,7 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         if(App.preferenceHelper.isShown()) {
             navGraph.setStartDestination(R.id.noteAppFragment)
-        }else {
+
+        }else if(!App.preferenceHelper.isRegistered()) {
+            navGraph.setStartDestination(R.id.signUpFragment)
+        }
+        else {
             navGraph.setStartDestination(R.id.onBoardFragment2)
         }
         navController.graph = navGraph

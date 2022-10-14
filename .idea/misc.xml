@@ -4,16 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1345" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/circle.xml" value="0.1" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/circle_one.xml" value="0.1" />
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/color.xml" value="0.12" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/edittex.xml" value="0.148" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/edittext.xml" value="0.2" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/ic_delete.xml" value="0.1305" />
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1345" />
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/liuse.xml" value="0.1255" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/radiobottun.xml" value="0.152" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/radiobtn.xml" value="0.139" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/radiobtnblack.xml" value="0.139" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/drawable/radios.xml" value="0.1305" />
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_code.xml" value="0.24947916666666667" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_detail.xml" value="0.176" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_detail.xml" value="0.2" />
         <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_main_on_board.xml" value="0.2" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_note_app.xml" value="0.2" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_on_board.xml" value="0.16" />
-        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/item_note.xml" value="0.1" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_menu.xml" value="0.14492753623188406" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_note_app.xml" value="0.264" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_on_board.xml" value="0.264" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/fragment_sign_up.xml" value="0.176" />
+        <entry key="..\:/Lesson/projectKotlin1/app/src/main/res/layout/item_note.xml" value="0.264" />
       </map>
     </option>
   </component>

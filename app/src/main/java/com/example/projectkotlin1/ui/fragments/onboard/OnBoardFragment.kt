@@ -30,7 +30,7 @@ class OnBoardFragment : Fragment() {
 
     private fun switchingOnBoard() {
         bindindg.viewPager.adapter = OnBoardAdapter(this@OnBoardFragment)
-        bindindg.wormDotsIndicator.attachTo(bindindg.viewPager)
+        bindindg.indicator.setViewPager(bindindg.viewPager)
     }
 
     private fun onBoardActivity() {

@@ -19,12 +19,13 @@ import java.util.*
 class DetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailBinding
+    private var backgroundColor = "#343434"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-      binding = FragmentDetailBinding.inflate(inflater,container,false)
+        binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -33,7 +34,9 @@ class DetailFragment : Fragment() {
         setupListener()
         goToModel()
         goToMainFRagments()
+
     }
+
 
     private fun setupListener() {
         binding.textConfirmNote.setOnClickListener {
@@ -43,24 +46,30 @@ class DetailFragment : Fragment() {
             val time = getTime()
 
             App.getDataIntense()?.getNoteDao()?.insert(
-                NoteModel(title,description,date,time)
+                NoteModel(title, description, date, time, color = backgroundColor)
             )
             findNavController().navigate(
-                 R.id.action_detailFragment_to_noteAppFragment
+                R.id.action_detailFragment_to_noteAppFragment
             )
-
-            val newNote:NoteModel = NoteModel(title,description,"12.03.22","12:00")
-            setBackStackData("newNote",newNote,true)
+        }
+        binding.blackColor.setOnClickListener {
+            backgroundColor = "#343434"
+        }
+        binding.darkRedColor.setOnClickListener {
+            backgroundColor = "#8B0000"
+        }
+        binding.whiteColor.setOnClickListener {
+            backgroundColor = "#FFFFFFFF"
         }
     }
 
     private fun goToModel() {
-     binding.back.setOnClickListener{
-         findNavController().navigate(
-             R.id.action_detailFragment_to_noteAppFragment
+        binding.back.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_detailFragment_to_noteAppFragment
 
-         )
-     }
+            )
+        }
     }
 
     private fun goToMainFRagments() {
@@ -68,19 +77,21 @@ class DetailFragment : Fragment() {
         binding.time.text = getTime()
     }
 
-   @SuppressLint("SimpleDateFormat")
-    private  fun getData(): String{
+
+    @SuppressLint("SimpleDateFormat")
+    private fun getData(): String {
         val dataFormat = SimpleDateFormat("d MMMM")
         val data = dataFormat.format(Calendar.getInstance().time)
         return data
     }
 
     @SuppressLint("SimpleDataFormat")
-    private fun getTime(): String{
-    val timeFormat= SimpleDateFormat("HH:mm")
-    val time = timeFormat.format(Calendar.getInstance().time)
-    return time
+    private fun getTime(): String {
+        val timeFormat = SimpleDateFormat("HH:mm")
+        val time = timeFormat.format(Calendar.getInstance().time)
+        return time
     }
+
 
 }
 

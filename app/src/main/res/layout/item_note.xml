@@ -10,8 +10,8 @@
         android:id="@+id/item_card"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        app:cardBackgroundColor="@android:color/white"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/glass_color"
         app:cardCornerRadius="16dp"
         android:padding="15dp"
         android:layout_marginHorizontal="20dp">

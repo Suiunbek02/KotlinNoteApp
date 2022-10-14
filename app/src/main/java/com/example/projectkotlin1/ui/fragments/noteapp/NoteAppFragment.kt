@@ -47,7 +47,7 @@ class NoteAppFragment : Fragment(),OnNoteClickListener {
     }
 
     private fun setupListener() {
-     binding.buttonAdd.setOnClickListener{
+     binding.backNote.setOnClickListener{
      findNavController().navigate(
          R.id.action_noteAppFragment_to_detailFragment)
         }

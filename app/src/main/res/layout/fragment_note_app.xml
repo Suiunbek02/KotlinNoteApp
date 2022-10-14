@@ -1,33 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
     tools:context=".ui.fragments.noteapp.NoteAppFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/note_recView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
         tools:listitem="@layout/item_note" />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/buttonAdd"
-        android:layout_width="60dp"
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:cornerRadius="50dp"
-        android:text="@string/plus"
-        android:layout_margin="25dp"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/DarkOrange"
-        android:textSize="30sp"
-        android:insetBottom="0dp"
-        android:layout_marginBottom="20dp"
+        android:background="@color/DimGray"
+        android:gravity="center"
+        android:text="Заметки"
+        android:textColor="@color/gray"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end"
         android:layout_marginEnd="20dp"
+        android:background="@drawable/imagebtn"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittex"
+        android:hint="@string/a"
+        android:textSize="18sp"
+        android:paddingStart="50dp"
+        app:layout_constraintBottom_toTopOf="@id/note_recView"
+        android:textColorHint="@color/gray"
+        android:gravity="center|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:ignore="Autofill" />
+
+    <ImageView
+        android:id="@+id/searchImage"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/search"
+        app:layout_constraintStart_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="@id/search"
+        app:layout_constraintBottom_toBottomOf="@id/search"
+        android:layout_marginStart="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/DarkOrange"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
         android:insetTop="0dp"
-        android:layout_gravity="bottom|end"/>
+        android:insetBottom="0dp"/>
 
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,4 +16,10 @@ class PreferenceHelper(context: Context) {
     fun putValue(boolean: Boolean) {
        sharedPreference.edit().putBoolean("key",boolean)?.apply()
     }
+    fun isRegistered(): Boolean {
+        return sharedPreference.getBoolean("signUp",false)
+    }
+    fun putRegistered(boolean: Boolean) {
+        sharedPreference.edit().putBoolean("signUp",boolean)
+    }
 }

@@ -16,8 +16,12 @@ val description: String,
 val date: String,
 
     @ColumnInfo
-val time: String
+val time: String,
+val color:String
 ) {
 @PrimaryKey(autoGenerate = true)
 var id:Int = 0
+
+
+
 }
